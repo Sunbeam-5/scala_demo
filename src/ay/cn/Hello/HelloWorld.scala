@@ -8,10 +8,17 @@ import scala.util.control.Breaks.{break, breakable}
 object HelloWorld {
 
   class Test(var name:String) {
-
+      def display(): Unit = {
+        println(name)
+      }
   }
 
   def main(args: Array[String]): Unit = {
+
+    var t = new Test("zhangsan")
+    t.display()
+
+
 //    val line = scala.io.StdIn.readLine
 //    val i = readLine("Please input a Intnumber")
 
@@ -223,7 +230,5 @@ object HelloWorld {
     while((iter.hasNext)) {
       println(iter.next())
     }*/
-
-
   }
 }
